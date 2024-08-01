@@ -2,22 +2,64 @@ body {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/136/715/original/Gratitude-Butterflies.jpg?1722530879");
   background-size: cover;
   background-repeat: no-repeat;
-  color: purple;
+  color: #6f3381;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 h1 {
   text-align: center;
+  font-weight: 800;
+  font-size: 36px;
+}
+
+form {
+  padding: 30px;
+  background-color: rgb(228, 237, 245);
+  box-shadow: 0px 4px 30px 0px rgba(33, 43, 66, 0.03);
+  border-radius: 10px;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.instructions {
+  padding: 12px;
+  width: 80%;
+  background-color: rgb(241, 246, 250);
+  border-radius: 35px;
+  border: 1px solid rgb(33, 43, 66);
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.submit-button {
+  margin-left: 10px;
+  width: 150px;
+  border-radius: 35px;
+  border: 1px solid rgb(33, 43, 66);
+  background-color: #af97c9;
+}
+
+.poem {
+  font-size: 16px;
+  background-color: rgb(228, 237, 245);
+  box-shadow: 0px 4px 30px 0px rgba(33, 43, 66, 0.03);
+  line-height: 2;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  margin-top: 40px;
+  padding: 40px;
+  background-color: rgba(193, 203, 231, 0.7);
+  border-radius: 10px;
 }
 
 footer {
   text-align: center;
-}
-
-.container {
-  width: 800px;
-  margin: auto;
-  margin-top: 40px;
-  padding: 40px;
-  background-color: rgba(193, 203, 231, 0.8);
-  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 30px;
 }
