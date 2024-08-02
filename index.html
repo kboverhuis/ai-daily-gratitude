@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Daily Gratitude</title>
   </head>
@@ -14,10 +15,10 @@
 
       <div>
         <main>
-          <form>
+          <form id="gratitude-generator-form">
             <input
               type="text"
-              placeholder="Enter a gratitude topic..."
+              placeholder="Enter a gratitude topic...i.e: family, friends, pets etc"
               required
               autofocus
               autocomplete="off"
@@ -27,7 +28,7 @@
             <input type="submit" class="submit-button" />
           </form>
 
-          <div class="poem">
+          <div class="gratitude" id="gratitude">
             Gratitude line 1
             <br />
             Gratitude line 2
