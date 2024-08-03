@@ -19,7 +19,7 @@ function generateGratitude(event) {
 
   let gratitudeElement = document.querySelector("#gratitude");
   gratitudeElement.classList.remove("hidden");
-  gratitudeElement.innerHTML = `<div class="cccccc">⌛ Generating your gratitude about ${instructionsInput.value}`;
+  gratitudeElement.innerHTML = `<div class="generating">⌛ Generating your gratitude about ${instructionsInput.value}</div>`;
 
   axios.get(apiUrl).then(displayGratitude);
 }
