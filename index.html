@@ -16,37 +16,44 @@
 
       <div>
         <main>
-          <form id="gratitude-generator-form">
-            <input
-              type="text"
-              placeholder="Enter a gratitude topic...i.e: family, friends, pets etc"
-              required
-              autofocus
-              autocomplete="off"
-              class="instructions"
-              id="user-instructions"
-            />
+          <div class="form-container">
+            <form id="gratitude-generator-form">
+              <input
+                type="text"
+                placeholder="Enter a gratitude topic..."
+                required
+                autofocus
+                autocomplete="off"
+                class="instructions"
+                id="user-instructions"
+              />
 
-            <input type="submit" class="submit-button" />
-          </form>
+              <input type="submit" class="submit-button" />
+            </form>
 
-          <div class="gratitude" id="gratitude">
-            Gratitude line 1
+            <div class="hint">i.e: family, friends or pets</div>
+          </div>
+          <div class="gratitude hidden" id="gratitude">
             <br />
-            Gratitude line 2
           </div>
         </main>
       </div>
 
       <footer>
         This AI project was created by
-        <a href="https://github.com/kboverhuis">Kristi Boverhuis</a> is
-
-        <a href="https://github.com/kboverhuis/ai-daily-gratitude"
+        <a href="https://github.com/kboverhuis" target="_blank"
+          >Kristi Boverhuis</a
+        >
+        is
+        <a
+          href="https://github.com/kboverhuis/ai-daily-gratitude"
+          target="_blank"
           >open-sourced on GitHub</a
         >
         and
-        <a href="https://daily-gratitude.netlify.app/">hosted on Netlify</a>
+        <a href="https://daily-gratitude.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >
       </footer>
     </div>
     <script src="src/index.js"></script>

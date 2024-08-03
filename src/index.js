@@ -1,5 +1,4 @@
 function displayGratitude(response) {
-  console.log("Gratitude generated");
   new Typewriter("#gratitude", {
     strings: response.data.answer,
     autoStart: true,
@@ -18,9 +17,9 @@ function generateGratitude(event) {
   let prompt = `User Instructions: Generate a positive response of gratitude about ${instructionsInput.value}`;
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
-  console.log("Generating Gratitude");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
+  let gratitudeElement = document.querySelector("#gratitude");
+  gratitudeElement.classList.remove("hidden");
+  gratitudeElement.innerHTML = `<div class="cccccc">⌛ Generating your gratitude about ${instructionsInput.value}`;
 
   axios.get(apiUrl).then(displayGratitude);
 }
